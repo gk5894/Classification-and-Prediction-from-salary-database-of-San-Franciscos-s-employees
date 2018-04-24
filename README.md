@@ -75,31 +75,21 @@ various aspects related to them. It includes the overtime pay, benefits and date
 
 ## Methods Used
 
-PCA – Principle Component Analysis is a technique used to emphasized variation and bring out
-strong patterns in a dataset. It’s often used to make data easy to explore and visualize.
+#### PCA
+Principle Component Analysis is a technique used to emphasized variation and bring out strong patterns in a dataset. It’s often used to make data easy to explore and visualize.
 
 We used PCA to apply dimension reduction on our dataset which will help us determine the most
 significant variables among the 12 variables we had for representing the variations.
 
 1. We used ‘prcomp’ package in R for implementing the PCA analysis on the data.
  
-2. It performs a principal components analysis on the given data matrix and returns the results
- as an object of class.
+2. It performs a principal components analysis on the given data matrix and returns the results as an object of class.
  
-3. We get the following result after the applying it on the normalized dataset.
+3. We get the following result after the applying it on the normalized dataset. 
+  * By using the ‘$rotation’ we get to see the principal components for each variable.
+  * By interpreting this output, we try to determine the most significant principle components.
+  * To see the Eigen values, we print ‘p_var’ and get following values
  
-
-1. By using the ‘$rotation’ we get to see the principal components for each variable.
- 
-2. By interpreting this output, we try to determine the most significant principle components.
- 
-3. To see the Eigen values, we print ‘p_var’ and get following values
- 
-
-Stevens Institute of Technology – Fall 2017 6 Multivariate Data Analysis BIA-652
-
-Analysis of Salaries in San Francisco
-
 1. By observing the Eigen values, we get a clue how many principle components should be
 used for the final analysis.
  
